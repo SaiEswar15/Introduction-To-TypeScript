@@ -1,10 +1,6 @@
 void main() {
 
-  String a = "eswar";
-  // String b = "kumar";
-  String c = "kumar";
-
-  parametersTypeCheck(c,name2 : a);
+  
   
 }
 
@@ -71,3 +67,17 @@ void parametersTypeCheck(String a,{required String name2,String? name1})
   print(a);
   print("${name2}");
 }
+
+({String name,int age,bool isMarried}) returnMultipleProps()
+{
+  return (name : "eswar", age : 12, isMarried : false);
+}
+
+T myFunction<T>(bool returnInt) {
+  if (returnInt) {
+    return 42 as T; // Change to your desired integer value
+  } else {
+    return "Hello, World!" as T; // Change to your desired string value
+  }
+}
+
