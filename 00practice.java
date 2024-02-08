@@ -1,10 +1,13 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 class Main {
 
     public static void main(String[] args) {
-        parametersTypeCheck(Map.of("name2", "kumar", "name1", "eswar"));
+        
+        arrayList();
+
     }
 
     static void createMapAndGetValueNotPresent() {
@@ -47,6 +50,22 @@ class Main {
     {
         System.out.println(args.get("name2")); 
     }
+
+    static void arrayList()
+    {
+        ArrayList<String> al = new ArrayList<>();
+        al.add("eswar");
+        al.add("esr");
+        al.add("er");
+        al.add("r");
+        al.add("ar");
+
+        for (String ele : al) {
+            System.out.println(ele);
+        }
+
+    }
+
 
 }
 
