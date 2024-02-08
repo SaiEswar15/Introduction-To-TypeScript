@@ -1,8 +1,10 @@
 void main() {
 
-  
+  print(listPractice());
   
 }
+
+
 
 void createMapAndGetValueNotPresent() {
     Map<String, int> obj = {
@@ -81,3 +83,7 @@ T myFunction<T>(bool returnInt) {
   }
 }
 
+List listPractice()
+{
+  return [1,2,3];
+}
