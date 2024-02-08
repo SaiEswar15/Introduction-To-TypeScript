@@ -1,6 +1,10 @@
 void main() {
 
-  print(listPractice());
+  Student student1 = new Student("sai","eswar",25 );
+  print("yo yo ");
+  print(student1.printingString2("hello"));
+
+  sendObject(student1);
   
 }
 
@@ -86,4 +90,39 @@ T myFunction<T>(bool returnInt) {
 List listPractice()
 {
   return [1,2,3];
+}
+
+Map<String,dynamic> returnObject()
+{
+  return { "name" : "eswar", "age" : "twentyfour"};
+}
+
+
+class Student{
+
+  String first_name;
+  String second_name;
+  int age;
+  
+
+  //constructor
+  Student(this.first_name, this.second_name, this.age)
+  {
+    
+  }
+
+  String printingString(){
+    return "hello hey";
+  }
+
+  String printingString2(String str){
+    return str;
+  }
+
+
+}
+
+Student sendObject(Student obj)
+{
+  return obj;
 }
